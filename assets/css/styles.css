@@ -76,17 +76,17 @@
 
 
 /*==================== BASE ====================*/
-* {
+*{
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-html {
+html{
   scroll-behavior: smooth;
 }
 
-body {
+body{
   margin: 0 0 var(--header-height) 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
@@ -94,32 +94,32 @@ body {
   color: var(--text-color);
 }
 
-h1, h2, h3, h4 {
+h1,h2,h3,h4{
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
 }
 
-ul {
+ul{
   list-style: none;
 }
 
-a {
+a{
   text-decoration: none;
 }
 
-img {
+img{
   max-width: 100%;
   height: auto;
 }
 
 /*==================== REUSABLE CSS CLASSES ====================*/
-.section {
+.section{
   padding: 2rem 0 4rem;
 }
 
-.section__title {
+.section__title{
   font-size: var(--h1-font-size);
-  color: var(--title-color);
+  /* color: var(--title-color); */
 }
 
 .section__subtitle {
@@ -129,23 +129,23 @@ img {
 }
 
 .section__title, 
-.section__subtitle {
+.section__subtitle{
   text-align: center;
 }
 
 /*==================== LAYOUT ====================*/
-.container {
+.container{
   max-width: 768px;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
 }
 
-.grid {
+.grid{
   display: grid;
   gap: 1.5rem;
 }
 
-.header {
+.header{
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -170,7 +170,7 @@ img {
 }
 
 .nav__logo:hover{
-  color: var(--first-color-alt);
+  color: var(--first-color);
 }
 
 .nav__toggle{
@@ -179,11 +179,11 @@ img {
 }
 
 .nav__logo:hover{
-  color: var(--first-color-alt);
+  color: var(--first-color);
 }
 
 @media screen and (max-width: 767px){
-  .nav_menu{
+  .nav__menu{
     position: fixed;
     bottom: -100%;
     left: 0;
@@ -206,7 +206,7 @@ img {
   flex-direction: column;
   align-items: center;
   font-size: var(--small-font-size);
-  color: var(--text-color);
+  color: var(--title-color);
   font-weight: var(--font-medium);
 }
 
