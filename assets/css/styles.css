@@ -375,7 +375,7 @@ img{
   color: var(--title-color);
 }
 
-.about_info-name{
+.about__info-name{
   font-size: var(--small-font-size);
 }
 

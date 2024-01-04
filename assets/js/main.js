@@ -21,7 +21,7 @@ if(navClose){
 
 /*==================== REMOVE MENU MOBILE ====================*/
 
-const navLink = document.querySelector('.nav__link')
+const navLink = Array.from(document.querySelectorAll('.nav__link'));
 
 function linkAction(){
     const navMenu = document.getElementById('nav-menu')
@@ -29,12 +29,12 @@ function linkAction(){
     navMenu.classList.remove('show-menu')
 }
 
-navLink.forEach(n => addEventListener('click', linkAction))
+navLink.forEach(n => n.addEventListener('click', linkAction));
 
 /*==================== ACCORDION SKILLS ====================*/
 
-const skillsContent = document.getElementsByClassName('skills__content');
-const skillsHeader = document.querySelectorAll('.skills__header')
+const skillsContent = document.getElementsByClassName('skills__content'),
+      skillsHeader = document.querySelectorAll('.skills__header')
 
 function toggleSkills(){
     let itemClass = this.parentNode.className
@@ -49,7 +49,9 @@ function toggleSkills(){
 
 skillsHeader.forEach((el) =>{
     el.addEventListener('click', toggleSkills)
-})
+});
+
+
 /*==================== QUALIFICATION TABS ====================*/
 
 
