@@ -815,7 +815,46 @@ img{
 }
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
+@media screen and (max-width: 350px){
+  .container{
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
 
+  .nav__menu{
+    padding: 2rem .25rem 4rem;
+  }
+
+  .nav__list{
+    column-gap: 0;
+  }
+
+  .home__content{
+    grid-template-columns: .25fr 3fr;
+  }
+
+  .home__blob{
+    width: 180px;
+  }
+
+  .skills__title{
+    font-size: var(--normal-font-size);
+  }
+
+  .experience__data{
+    gap: .5rem;
+  }
+
+  .domain__container{
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+
+  .domain__content{
+    grid-template-columns: auto;
+    padding-right: 3.5rem;
+  }
+}
 
 /* For medium devices */
 
