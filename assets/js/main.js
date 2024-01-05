@@ -74,7 +74,18 @@ const tabs = document.querySelectorAll('[data-target]'),
 
 
 /*==================== PORTFOLIO SWIPER  ====================*/
-
+let swiper = new swiper(".portfolio__container", {
+    cssMode: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    mousewheel: true,
+    keyboard: true,
+});
 
 /*==================== TESTIMONIAL ====================*/
 
