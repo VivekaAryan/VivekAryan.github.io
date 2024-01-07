@@ -565,6 +565,18 @@ img{
   margin-bottom: var(--mb-1);
 }
 
+.experience__bullet-points {
+  list-style-type: disc; /* Specifies the type of list item marker (bullet) */
+  margin-top: 10px; /* Adjust the top margin as needed */
+  padding-left: 20px; /* Adjust the left padding to create space for the bullets */
+  width: -500px
+}
+
+/* Style for each list item */
+.experience__bullet-points li {
+  margin-bottom: 10px; /* Adjust the bottom margin between list items */
+}
+
 .experience__calender{
   font-size: var(--small-font-size);
   color: var(--text-color-light);
@@ -1073,6 +1085,14 @@ img{
 
   .portfolio__content{
     column-gap: 5rem;
+  }
+
+  .experience__container,
+  .skills__container,
+  .domain__container,
+  .about__container{
+    max-width: 950px; /* Set your desired width (e.g., 1200px) */
+    margin: 0 auto;    /* Center the container horizontally */
   }
 
   .swiper-portfolio-icon{
