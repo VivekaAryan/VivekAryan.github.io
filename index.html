@@ -863,16 +863,21 @@
 
                 <div class="portfolio__container container swiper-container">
                     <div class="swiper-wrapper">
+
                         <!--==================== PORTFOLIO 1 ====================-->
                         <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img">
+                            <img src="assets/img/Image_segmentation.png" alt="" class="portfolio__img">
 
                             <div class="portfolio__data">
-                                <h3 class="portfolio__title">Illuminating LLM Responses (XAI) with GPT 3.5 and T5</h3>
-                                <p class="portfolio__description">Leveraged LangChain framework on GPT 3.5 to create high-quality QA downstream task response 
-                                    on custom documents. Fine-tuned the T5 LLM to generate headlines from responses and employed contextual similarity (cosine) 
-                                    on the embeddings of T5-generated headline and the title of the document to retrieve the document that was used to generate 
-                                    the response.</p>
+                                <h3 class="portfolio__title">Transformers vs CNNs for Semantic Segmentation of Bridge Damages</h3>
+                                <p class="portfolio__description">
+                                    Image segmentation serves as a pivotal tool in the detection of defects in bridges, offering a systematic and thorough approach to enhance 
+                                    the accuracy, efficiency, and timeliness of assessing structural integrity and ensuring the safety of critical infrastructure.
+                                    <br><br>
+                                    This project focuses on the implementation of Segformer-b5 and YOLOv8-m models in segmenting the different damage and object classes on dacl10k 
+                                    dataset. The performance metric chosen was “mean Intersection over Union (mIOU)”. The experiments show that YOLOv8-m trained for 70 epochs 
+                                    resulting in 0.312 mIOU performs slightly better than Segformer-b5 trained for 5 epochs giving 0.268 mIOU.
+                                </p>
                                 <a href="#" class="button button--flex button--small portfolio__button">
                                     Demo
                                     <i class="uil uil-arrow-right button__icon"></i>
@@ -882,12 +887,19 @@
 
                         <!--==================== PORTFOLIO 2 ====================-->
                         <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img">
+                            <img src="assets/img/Pedestrian_crossing_project.jpg" alt="" class="portfolio__img">
 
                             <div class="portfolio__data">
-                                <h3 class="portfolio__title">Keyword extraction using Attention mechanism in BERT</h3>
-                                <p class="portfolio__description">Used the contextual embedding from the last hidden layer of the output of BERT to extract the 
-                                    top 5 keywords from any a text body.</p>
+                                <h3 class="portfolio__title">Pedestrian Crossing Detection using YOLOv8</h3>
+                                <p class="portfolio__description">
+                                    The safety of pedestrians in smart cities and advanced traffic management systems is of paramount concern in today's world. This project focuses on 
+                                    developing a sophisticated pedestrian detection system aimed at enhancing safety on the roads. This was achieved through fine-tuning the state-of-the-art 
+                                    single-shot object detection YOLOv8s model on an available Pedestrian Intention Estimation (PIE) Dataset, from which we extracted 4922 images, which have 
+                                    three different classes of pedestrians crossing the roads. In order to maintain high standards and yield the best results, the data needed to be prepared 
+                                    and meticulously processed. This training process was evaluated on a plethora of metrics such as bounding box precision, recall, mAP50, mAP50-95, DFL-loss, 
+                                    and classification loss. Our final model was able to achieve a mAP50 of 0.590 and a mAP50-95 of 0.412. The fine-tuned model was used to detect instances 
+                                    in an independent image dataset to simulate real-world scenarios where pedestrians were crossing the roads or not with respect to the ego vehicle.
+                                </p>
                                 <a href="#" class="button button--flex button--small portfolio__button">
                                     Demo
                                     <i class="uil uil-arrow-right button__icon"></i>
@@ -897,11 +909,18 @@
 
                         <!--==================== PORTFOLIO 3 ====================-->
                         <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img">
+                            <img src="assets/img/break-in.jpg" alt="" class="portfolio__img">
 
                             <div class="portfolio__data">
-                                <h3 class="portfolio__title">Hotdog or Not Hotdog</h3>
-                                <p class="portfolio__description">Developed a 93.67% accurate custom image classification model that leverages Inception V3.</p>
+                                <h3 class="portfolio__title">Room Occupancy Estimation</h3>
+                                <p class="portfolio__description">
+                                    The aim of the project is to estimate the occupancy in a room in the event of a “break and enter”. It is a
+                                    classification task. Data from multiple non-intrusive environmental sensors like temperature, sound, CO2,
+                                    and PIR (motion detection) were used to estimate occupancy without a computer vision solution. The
+                                    structured data, of 10129 instances and 16 variables, were collected over a period of 4 days in a controlled
+                                    manner. The target occupancy varies between 0 and 3 people.The two best models are Random Forest Classifier 
+                                    with 99.56% accuracy and MLP with 98.33% accuracy.
+                                </p>
                                 <a href="#" class="button button--flex button--small portfolio__button">
                                     Demo
                                     <i class="uil uil-arrow-right button__icon"></i>
@@ -909,14 +928,19 @@
                             </div>
                         </div>
 
+
                         <!--==================== PORTFOLIO 4 ====================-->
                         <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img">
+                            <img src="assets/img/XAI.jpeg" alt="" class="portfolio__img">
 
                             <div class="portfolio__data">
-                                <h3 class="portfolio__title">Resume Parser</h3>
-                                <p class="portfolio__description">Created a Custom Name Entity Recognition model using spaCy. This model was trained on a training 
-                                    dataset containing samples of hard skills and soft skills, to extract skills from PDF files.</p>
+                                <h3 class="portfolio__title">Illuminating LLM Responses (XAI) with GPT 3.5 and T5</h3>
+                                <p class="portfolio__description">Leveraged LangChain framework on GPT 3.5 to create high-quality QA downstream task response 
+                                    on custom documents. Fine-tuned the T5 LLM to generate headlines from responses and employed contextual similarity (cosine) 
+                                    on the embeddings of T5-generated headline and the title of the document to retrieve the document that was used to generate 
+                                    the response. <br><br> This integrated framework represents a pioneering approach to document-specific QA tasks, showcasing the 
+                                    potential for advanced language models in nuanced information retrieval and synthesis.
+                                </p>
                                 <a href="#" class="button button--flex button--small portfolio__button">
                                     Demo
                                     <i class="uil uil-arrow-right button__icon"></i>
@@ -926,12 +950,18 @@
 
                         <!--==================== PORTFOLIO 5 ====================-->
                         <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img">
+                            <img src="assets/img/keyword.png" alt="" class="portfolio__img">
 
                             <div class="portfolio__data">
-                                <h3 class="portfolio__title">HackerEarth: Adopt a buddy Challenge</h3>
-                                <p class="portfolio__description">Built a multi-label machine learning model which was stacked with XGBoost and Light GBM algorithms, 
-                                    to determine the type and breed of the animal. The model got me a place in the top 8% on the leaderboard.</p>
+                                <h3 class="portfolio__title">Keyword extraction using Attention mechanism in BERT</h3>
+                                <p class="portfolio__description">Leveraging the power of BERT (Bidirectional Encoder Representations from Transformers), I harnessed 
+                                    the contextual embeddings from the final hidden layer of its output. This strategic choice allowed for a nuanced understanding of 
+                                    the text body, capturing intricate contextual nuances. By employing this information, I successfully developed a robust system to 
+                                    automatically extract the top 5 keywords from any given text. 
+                                    <br><br>
+                                    This approach not only enhanced keyword extraction accuracy but also demonstrated the efficacy of utilizing contextual embeddings 
+                                    for extracting meaningful insights from textual data.
+                                </p>
                                 <a href="#" class="button button--flex button--small portfolio__button">
                                     Demo
                                     <i class="uil uil-arrow-right button__icon"></i>
@@ -941,12 +971,77 @@
 
                         <!--==================== PORTFOLIO 6 ====================-->
                         <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/not_hotdog.png" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Hotdog or Not Hotdog</h3>
+                                <p class="portfolio__description">The project culminated in the creation of a highly accurate custom image classification model, boasting 
+                                    an impressive accuracy rate of 93.67%. This achievement was made possible by leveraging the powerful Inception V3 architecture, which 
+                                    played a pivotal role in extracting intricate features from the images.
+                                    <br><br>
+                                    The model's accuracy underscores the efficacy of Inception V3, showcasing the potential of tailored models for achieving precision in 
+                                    diverse visual recognition tasks.
+                                </p>
+                                <a href="#" class="button button--flex button--small portfolio__button">
+                                    Demo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!--==================== PORTFOLIO 7 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Resume Parser</h3>
+                                <p class="portfolio__description">
+                                    The project involved the development of a custom Named Entity Recognition (NER) model utilizing spaCy. The model was 
+                                    meticulously trained on a diverse dataset comprising examples of both hard skills and soft skills. Its primary objective was to adeptly 
+                                    extract skills from PDF files, demonstrating a versatile application for automated information extraction. 
+                                    <br><br>
+                                    The tailored NER model not only showcased the capabilities of spaCy in accurately identifying and categorizing entities but also highlighted 
+                                    the project's significance in streamlining the extraction of valuable information from unstructured data sources like PDF documents.
+                                </p>
+                                <a href="#" class="button button--flex button--small portfolio__button">
+                                    Demo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!--==================== PORTFOLIO 8 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">HackerEarth: Adopt a buddy Challenge</h3>
+                                <p class="portfolio__description">
+                                    The project entailed constructing a robust multi-label machine learning model, skillfully combining the strengths of XGBoost and Light GBM 
+                                    algorithms by stakcing the models. This dynamic ensemble approach was purposed to determine both the type and breed of animals in the dataset. 
+                                    <br><br>
+                                    The model's exceptional performance not only secured accurate predictions but also helped me achieve the top 8% on the project leaderboard. 
+                                    This success underscores the effectiveness of the stacked ensemble strategy and its practical application in achieving high-ranking results in 
+                                    complex classification tasks.</p>
+                                <a href="#" class="button button--flex button--small portfolio__button">
+                                    Demo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!--==================== PORTFOLIO 9 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
                             <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img">
 
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">Content-Based Movie Recommender System</h3>
-                                <p class="portfolio__description">Created a web app on an end-to-end movie recommendation system using Cosine Similarity, from the data 
-                                    scraped from the TMDB website by calling the API. Wrapped it in a Flask API and deployed it onto Heroku.</p>
+                                <p class="portfolio__description">
+                                    The project involved the development of an end-to-end movie recommendation system utilizing Cosine Similarity, with data sourced through API 
+                                    calls to the TMDB website. This comprehensive system allowed users to receive personalized movie suggestions based on their preferences. To make 
+                                    it accessible, I encapsulated the recommendation engine into a user-friendly web app using Flask. Furthermore, the deployment was seamlessly 
+                                    executed on the Heroku platform, ensuring widespread accessibility and convenience for movie enthusiasts seeking tailored film suggestions.
+                                </p>
                                 <a href="#" class="button button--flex button--small portfolio__button">
                                     Demo
                                     <i class="uil uil-arrow-right button__icon"></i>
