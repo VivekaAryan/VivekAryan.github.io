@@ -272,7 +272,6 @@ img{
 /*==================== HOME ====================*/
 .home__container{
   gap: 1rem;
-  
 }
 
 .home__content{
@@ -968,6 +967,8 @@ img{
 
   .home__content{
     padding-top: 5.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     column-gap: 2rem;
   }
 
@@ -1076,7 +1077,7 @@ img{
   }
 
   .home__social{
-    transform: translateX(-6rem);
+    transform: translateX(0.5rem);
   }
 
   .domain__container{
@@ -1087,6 +1088,7 @@ img{
     column-gap: 5rem;
   }
 
+  .home__container,
   .experience__container,
   .skills__container,
   .domain__container,
