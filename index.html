@@ -186,6 +186,11 @@
                             blend of academic rigor and practical industry exposure positions me as a versatile professional capable of navigating the 
                             complexities of data science. Highly dedicated problem solver, goal-oriented, and an efficient team player. Self-driven and 
                             fast learner.
+                            <br><br>
+                            What I may lack in years of experience, I compensate with my ability to grasp new tools and techniques quickly. This is evident 
+                            in my journey from Civil Engineering to Business Intelligence Engineer and ultimately to a Data Scientist, gaining experience in 
+                            generative AI and computer vision along the way.
+
                         </p>
                         <div class="about__info">
                             <div>
@@ -202,7 +207,7 @@
                             </div>
                         </div>
                         <div class="about__buttons">
-                            <a download="" href="assets/pdf/Vivek Aryan - Resume (Jan 24).pdf" class="button bottons--flex">
+                            <a download="" href="assets/pdf/Vivek Aryan ds (3yrs exp).pdf" class="button bottons--flex">
                                 Download CV<i class="fa-solid fa-download button__icon"></i>
                             </a>
                         </div>
@@ -389,7 +394,7 @@
 
                                 <div class="skills__data">
                                     <div class="skills__titles">
-                                        <h3 class="skills__name">Vector Database [FAISS, Chrome]</h3>
+                                        <h3 class="skills__name">Vector Database [FAISS, Weaviate]</h3>
                                         <span class="skills__number">Proficient</span>
                                     </div>
                                     <div class="skills__bar">
@@ -769,12 +774,12 @@
                                         <br> 
                                         Houston, Texas 
                                         <br> 
-                                        GPA: 3.95
+                                        GPA: 3.93
                                     </span><br>
 
                                         <div class="experience__calender">
                                         <i class="fa-solid fa-calendar-days"></i>
-                                        Jan 2023 -  May 2024 (Currently pursuing)
+                                        Jan 2023 -  May 2024 (Summa Cum Laude)
                                     </div>
                                 </div>
 
@@ -818,7 +823,7 @@
                                     <span class="experience__subtitle">Aiceberg - Houston, Texas</span>
                                     <div class="experience__calender">
                                         <i class="fa-solid fa-calendar-days"></i>
-                                        2023 - Currently Working
+                                        2023 - 2024
                                     </div>
                                     <ul class="experience__bullet-points">
                                         <li>Fine-tuned large language models (such as llama2 )on a custom dataset using LoRA and QLoRA fine-tuning methods and quantization of the models.</li>
@@ -944,6 +949,54 @@
 
                 <div class="portfolio__container container swiper-container">
                     <div class="swiper-wrapper">
+
+                        <!--==================== PORTFOLIO -1 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/Movie Recommendation.png" alt="" class="portfolio__img__movie">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Movie Recommendation System using LLMs</h3>
+                                <p class="portfolio__description">
+                                    The Movie Recommendation System helps users find similar movies by entering a movie title. It provides a top 10 list of similar movies, ranked by weighted scores and popularity. 
+                                    Additionally, the system generates a brief summary of each recommended movie using the Phi-3 language model, offering an overview of the plot for each suggestion.
+                                    <h3>Workflow </h3>
+                                    <h4>Data: </h4> The data was taken from Movies Daily Update Dataset available on Kaggle. Extra directors name were scrapped from wikipedia and The Movie DataBase website. The data 
+                                    is ingested and recommendation are provided based on the genre, keywords, cast and director name.
+                                    <h4>Recommendations:</h4> Previously I have used Count Vectorization method to get embeddings, which essentially represents text as a vector of word counts. To improve this I have 
+                                    generated embeddings using a Sentence Transformer which captures the context, leading to better semantic understanding and improved performance.
+                                    <h4>Weaviate:</h4> Used for storage and performing similarity search.
+                                    <h4>LangChain:</h4> This framework was used to integrate weaviate with workflow and also used to create a pipeline to streamline the process of generateing summaries.
+                                    <h4>Fast API:</h4> Used to handle movie recommendations and summary generation.
+                                    <h4>Next.js:</h4> Used to build the user interface for interacting with the recommendation system.
+                                </p>
+                                <a href="https://github.com/VivekaAryan/Movie_recommendation_system" class="button button--flex button--small portfolio__button">
+                                    GitHub Link
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!--==================== PORTFOLIO 0 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/Reddit Data Pipeline.jpg" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Transformers vs CNNs for Semantic Segmentation of Bridge Damages</h3>
+                                <p class="portfolio__description">
+                                    This project offers a robust data pipeline solution designed to efficiently extract, transform, and load (ETL) Reddit data into a Redshift data warehouse. Leveraging a blend of 
+                                    industry-standard tools and services, the pipeline ensures seamless data processing and integration.
+                                    <br><br>
+                                    This project covers the process of connecting Apache Airflow to a Reddit instance in the cloud. PRAW: the Python Reddit API Wrapper was leveraged and injected with Reddit API 
+                                    credentials to extract subreddit posts and metadata from the Reddit app, which was integrated into the Airflow setup. The airflow environment was configured with a Celery backend 
+                                    and PostgreSQL for efficient task management and data storage. The Reddit data within Airflow was transferred to an S3 bucket. AWS Glue was utilized for data manipulation before 
+                                    querying and visualizing the data with Amazon Athena. Additionally, a data warehouse was set up on AWS using Amazon Redshift to demonstrate real-time data loading.
+                                </p>
+                                <a href="https://github.com/VivekaAryan/Reddit-Data-Pipeline" class="button button--flex button--small portfolio__button">
+                                    GitHub Link
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
 
                         <!--==================== PORTFOLIO 1 ====================-->
                         <div class="portfolio__content grid swiper-slide">
